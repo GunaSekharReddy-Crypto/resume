@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    display: flex;
+    background-image: url('Images/book1.jpg');
+
+    align-content: center;
+    
+    
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+h1,h3,h4{
+    margin-left: 30px;
+    
+}
+h1{
+    margin-top: 20px;
+}
+h3{
+    margin-left:100px ;
+}
+
+ul{
+    
+    list-style-type: none;    
+    padding: 17px 18px;
+    margin-left: -5px;
+    height: 100%;
+    
+}
+ul li{
+   
+    padding: 10px ;
+    margin:4px;
+    background-color:none;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+ul li a:hover{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-family: Georgia;
+    border-radius: 30%;
+    transition: 0.3s;
+
+}
+.active{
+    background-color: #000;
+    color: wheat;
+    border-radius: 30%;
+    font-size: 12px;
+
+   
+}
+p{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+footer{
+    background-image: radial-gradient( circle 250px at 48% 50.5%, rgba(40,49,73,0.93) 4.6%, rgba(40,49,73,1) 93.6% );
+    color:white;
+    height: 60px;
+    
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.icons{
+    align-items: right;
+    display: inline-grid;
+
+    display: inline-flex;
+
+    margin-left: 60%;
+}
+.nav-bar{
+    background-color:#D1EEE1;
+}
+
+
+
+
+
+.container{
+    border:1px solid black;
+    display: grid;
+    grid-template-areas: 
+    'h h h h h h h h h h h h'
+    'n c c c c c c c c c c c'
+    'f f f f f f f f f f f f';
+}
+.header{
+    grid-area: h;
+}
+.nav-bar{
+    align-content: center;
+    grid-area: n;
+    
+}
+.content{
+    grid-area: c;
+}
+.footer{
+    grid-area: f;
+}
+
+@media only screen and (max-width: 680px) {
+    
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'h h h h h h h h h h h h'
+        'n n n n n n n n n n n n '
+        'n n n n n n n n n n n n'
+        'c c c c c c c c c c c c'
+        'f f f f f f f f f f f f';
+    }
+    .header{
+        grid-area: h;
+    }
+    .nav-bar{
+        grid-area: n;
+
+    }
+    .content{
+        grid-area: c;
+    }
+    .footer{
+        grid-area: f;
+
+    }
+    ul li {
+        float: left;
+        padding: 0px 0px;
+        margin: 2px;
+        font-size:15px;
+       
+    }
+      
+}
+
+
